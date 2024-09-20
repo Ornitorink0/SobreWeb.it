@@ -53,7 +53,7 @@ export default class NavigationBar extends PureComponent {
         </div>
 
         {/* Icona per mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden z-30">
           {!isMenuOpen ? (
             <MenuRoundedIcon
               className="cursor-pointer"
@@ -79,7 +79,7 @@ export default class NavigationBar extends PureComponent {
             ></div>
 
             {/* Menu */}
-            <div className="fixed inset-y-0 right-0 bg-primary-800 w-64 p-6 z-20 text-white flex flex-col space-y-6 shadow-lg">
+            <div className="fixed inset-y-0 items-center justify-center right-0 w-48 p-6 z-20 text-white flex flex-col space-y-6 shadow-lg backdrop-blur-md border-l border-solid border-[#88888830]">
               <a
                 className="hover:text-accent1-500 transition duration-300"
                 href="/home"
