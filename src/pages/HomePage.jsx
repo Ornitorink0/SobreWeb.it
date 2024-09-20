@@ -2,11 +2,22 @@ import React, { PureComponent } from "react";
 
 import BackgroundCircle from "../components/BackgroundCircle.jsx";
 import NavigationBar from "../components/NavigationBar.jsx";
+import MetaTags from "../Meta.jsx";
 
 export default class HomePage extends PureComponent {
   render() {
     return (
       <>
+        <MetaTags
+          title="SobreWeb"
+          description="SobreWeb è un team di studenti dell'Istituto Sobrero che da oltre 15 anni si occupa della progettazione, manutenzione e gestione del sito web scolastico. Oltre a curare tutte le attività legate al web, il gruppo collabora stabilmente con enti e istituzioni esterne per la realizzazione e lo sviluppo di progetti digitali, mettendo a disposizione le proprie competenze e contribuendo a innovare il panorama online."
+          name="SobreWeb"
+          locale="it_IT"
+          robots="index,follow"
+          organization="IS Sobrero"
+          logo="/logo-compat-blue.png"
+          siteUrl="https://sobreweb.it"
+        />
         <NavigationBar />
         <div
           className=" min-h-screen bg-primary-900 flex items-center px-8 bg-cover bg-right bg-no-repeat"
