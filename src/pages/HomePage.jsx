@@ -17,9 +17,12 @@ export default class HomePage extends PureComponent {
             <h1 class="text-slate-900 font-extrabold text-6xl sm:text-7xl lg:text-8xl tracking-tight dark:text-white">
               Benvenuto nel nostro lato <span class="text-rose-500">tech</span>{" "}
             </h1>
-            <p class="mt-6 text-2xl text-slate-600 max-w-3xl dark:text-slate-400">
+            <p class="mt-6 text-2xl text-black max-w-3xl dark:text-white opacity-90">
               Vieni a scoprire i luoghi{" "}
-              <span class="text-sky-500">nascosti</span> dell'IS Sobrero.
+              <span class="text-sky-500 font-semibold opacity-100">
+                nascosti
+              </span>{" "}
+              dell'IS Sobrero.
             </p>
             <div class="mt-6 sm:mt-10 flex space-x-6 text-sm">
               <button class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
