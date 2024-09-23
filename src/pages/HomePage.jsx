@@ -44,9 +44,26 @@ export default class HomePage extends PureComponent {
           </div>
 
           <hr className="border-gray-800" />
-
-          {/* <ContentSection /> */}
         </div>
+        {/* <ContentSection /> */}
+        <div className="bg-primary-900 ">
+          <div className="px-10 text-slate-300 min-h-[70vh] grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-5xl mx-auto gap-8 py-8">
+            <h1 className="text-7xl font-bold">Chi siamo?</h1>
+            <p className="text-lg text-slate-400 md:text-2xl">
+              <span className="font-bold">SobreWeb</span> è un team di studenti
+              dell'<i>Istituto Sobrero</i>, attivo da oltre{" "}
+              <span className="font-bold">15 anni</span> nella progettazione e
+              gestione del sito web scolastico. Questo gruppo di giovani non si
+              limita a mantenere e aggiornare il portale, ma si impegna anche a
+              creare un ambiente online interattivo e coinvolgente per studenti,
+              docenti e genitori. Attraverso un lavoro costante e una forte
+              passione per il digitale, SobreWeb ha trasformato il sito in una
+              risorsa fondamentale per la comunità scolastica, migliorando la
+              comunicazione e facilitando l'accesso alle informazioni.
+            </p>
+          </div>
+        </div>
+        <hr className="border-gray-800" />
         <div className="relative bg-primary-900 px-10 text-slate-300 text-center min-h-screen flex flex-col justify-center">
           <div
             className="absolute w-full h-full top-0 left-0 bg-cover bg-center xl:bg-bottom bg-no-repeat z-0 opacity-10"
