@@ -47,7 +47,7 @@ export default class NavigationBar extends PureComponent {
 
     return (
       <nav
-        className={`text-white p-4 flex items-center justify-between fixed w-full z-20 top-0 px-8 transition-all duration-300 ${
+        className={`text-white p-4 flex items-center justify-between fixed w-full z-20 top-0 px-8 transition-all duration-300 drag-none ${
           isScrolled
             ? "backdrop-blur-md bg-primary-900/200 border-b border-solid border-[#88888830] shadow-lg"
             : "bg-transparent border-transparent"
@@ -59,7 +59,11 @@ export default class NavigationBar extends PureComponent {
         }}
       >
         <a href="/home">
-          <img className="opacity-40" src="/logo-48.svg" alt="SobreWeb logo" />
+          <img
+            className="opacity-40 select-none drag-none"
+            src="/logo-48.svg"
+            alt="SobreWeb logo"
+          />
         </a>
 
         {/* Menu per desktop */}
@@ -107,9 +111,8 @@ export default class NavigationBar extends PureComponent {
                 exit={{ opacity: 0 }}
               />
 
-              {/* Menu mobile a schermo intero con animazione */}
               <motion.div
-                className="fixed w-full h-screen inset-0 flex flex-col items-center justify-center bg-primary-900 z-20 text-white space-y-8"
+                className="fixed w-full h-screen inset-0 flex flex-col items-center justify-center bg-primary-900/95 z-20 text-white space-y-8"
                 initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
                 exit={{ y: "-100%" }}
