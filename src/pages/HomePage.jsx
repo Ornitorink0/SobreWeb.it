@@ -78,7 +78,7 @@ export default class HomePage extends PureComponent {
             </motion.p>
           </div>
           <div className="px-10 text-slate-300 grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-5xl mx-auto">
-            <section className="text-center px-8 my-20 sm:my-16 md:my-20 text-slate-300">
+            <section className="text-center px-8 mb-10 sm:mb-16 md:mb-20 text-slate-300">
               <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
                 “Fiero di noi” sempre e comunque.
               </h2>
@@ -251,6 +251,7 @@ export default class HomePage extends PureComponent {
             <PartnerSection />
           </motion.div>
         </div>
+        <Footer />
       </>
     );
   }
@@ -258,8 +259,88 @@ export default class HomePage extends PureComponent {
 
 const PartnerSection = () => {
   return (
-    <div className="max-w-7xl bg-primary-800 opacity-70 mt-10 border border-gray-200 rounded-lg shadow dark:border-gray-700 p-10 z-10">
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale bg-primary-800 opacity-70 select-none drag-none">
+    <div className="max-w-7xl bg-primary-800 opacity-70 mt-10 border border-gray-200 rounded-lg shadow dark:border-gray-700 p-10 z-10 mb-12">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale bg-primary-800 opacity-70 select-none drag-none items-center">
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/a_terr_al.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2016/07/logo_alternanza.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/chiaro.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2016/03/scuola_digitale.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2016/07/logo_serale.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/mail.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/registro.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2020/02/mad-1.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/share.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2016/01/dschola.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/miur.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/istanze.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/invalsi.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2015/09/rete_sicurezza_logo.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/2017/04/logo_albo.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
+        <img
+          src="https://www.sobrero.edu.it/wp-content/uploads/loghi/amm_tr.jpg"
+          alt="Logo"
+          className="brightness-[0.918] invert"
+        />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/02/logo-scuole-insieme-300x289.png"
           alt="Logo"
@@ -464,4 +545,83 @@ const ImageCarousel = () => {
 
 const CommentsSection = () => {
   return <div></div>;
+};
+
+const Footer = () => {
+  return (
+    <footer className="bg-black text-slate-300 px-10 pt-8">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="flex flex-col">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Contatti
+          </h2>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Email:{" "}
+            <a
+              href="mailto:info@sobreweb.it"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              info@sobreweb.it
+            </a>
+          </p>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Telefono:{" "}
+            <a
+              href="tel:+390123456789"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              +39 012 345 67 89
+            </a>
+          </p>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Indirizzo:{" "}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Via+Roma,+1,+10060+Montaldo+Torinese+TO"
+              class="text-blue-500 hover:text-blue-700"
+            >
+              Via Roma, 1, 10060 Montaldo Torinese (TO)
+            </a>
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Social
+          </h2>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <a
+              href="https://www.facebook.com/sobreweb"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              <img
+                src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white"
+                alt=""
+              />
+            </a>
+          </p>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <a
+              href="https://www.instagram.com/sobreweb_it"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              <img
+                src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white"
+                alt=""
+              />
+            </a>
+          </p>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <a
+              href="https://twitter.com/sobreweb_it"
+              className="text-blue-500 hover:text-blue-700"
+            >
+              <img
+                src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=x&logoColor=white"
+                alt=""
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 };
