@@ -78,7 +78,13 @@ export default class HomePage extends PureComponent {
             </motion.p>
           </div>
           <div className="px-10 text-slate-300 grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-5xl mx-auto">
-            <section className="text-center px-8 mb-10 sm:mb-16 md:mb-20 text-slate-300">
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center px-8 mb-10 sm:mb-16 md:mb-20 text-slate-300"
+            >
               <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
                 “Fiero di noi” sempre e comunque.
               </h2>
@@ -109,8 +115,14 @@ export default class HomePage extends PureComponent {
                   </div>
                 </figcaption>
               </figure>
-            </section>
-            <section className="text-center px-8 my-20 sm:my-16 md:my-20 text-slate-300">
+            </motion.section>
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="text-center px-8 my-20 sm:my-16 md:my-20 text-slate-300"
+            >
               <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
                 “Esperienza di vita”
               </h2>
@@ -141,7 +153,7 @@ export default class HomePage extends PureComponent {
                   </div>
                 </figcaption>
               </figure>
-            </section>
+            </motion.section>
           </div>
           <div className="px-10">
             {/* <div
@@ -259,7 +271,13 @@ export default class HomePage extends PureComponent {
 
 const PartnerSection = () => {
   return (
-    <div className="max-w-7xl bg-primary-800 opacity-70 mt-10 border border-gray-200 rounded-lg shadow dark:border-gray-700 p-10 z-10 mb-12">
+    <motion.div
+      initial={{ filter: "blur(10px)" }}
+      whileInView={{ filter: "blur(0px)" }}
+      transition={{ duration: 1, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="max-w-7xl bg-primary-800 opacity-70 mt-10 border border-gray-200 rounded-lg shadow dark:border-gray-700 p-10 z-10 mb-12"
+    >
       <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale bg-primary-800 opacity-70 select-none drag-none items-center">
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/a_terr_al.jpg"
@@ -412,7 +430,7 @@ const PartnerSection = () => {
           className="brightness-[0.918] invert"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
