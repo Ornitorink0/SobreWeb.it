@@ -24,7 +24,7 @@ export default class NoPage extends PureComponent {
             Torna alla home
           </a>
           <p className="text-lg text-slate-600">
-            Errore 404: pagina non trovata. Torna alla home
+            Errore 404: pagina non trovata.
           </p>
         </div>
       </>
