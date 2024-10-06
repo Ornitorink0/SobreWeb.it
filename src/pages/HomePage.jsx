@@ -316,8 +316,8 @@ const PartnerSection = () => {
       viewport={{ once: true }}
       className="z-10 mb-12 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
     >
-      <div className="drag-none grid select-none grid-cols-3 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-6">
-        <img
+      <div className="drag-none grid select-none grid-cols-3 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-5">
+        {/* <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/a_terr_al.jpg"
           alt="Logo"
           className="brightness-[0.918] invert"
@@ -396,17 +396,17 @@ const PartnerSection = () => {
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/amm_tr.jpg"
           alt="Logo"
           className="brightness-[0.918] invert"
-        />
+        /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/02/logo-scuole-insieme-300x289.png"
           alt="Logo"
           className="brightness-[0.918] invert"
         />
-        <img
+        {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/03/ECOFFICINA_NEW_LOGO_light.jpg"
           alt="Logo"
           className="brightness-[0.918] invert"
-        />
+        /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/03/logo_aula_amianto_asbesto-1-of-1.png"
           alt="Logo"
@@ -422,7 +422,7 @@ const PartnerSection = () => {
           alt="Logo"
           className="brightness-[0.918] invert"
         />
-        <img
+        {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/anna-d_alencon.png"
           alt="Logo"
           className="brightness-[0.918] invert"
@@ -456,150 +456,20 @@ const PartnerSection = () => {
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/icona-leardi.png"
           alt="Logo"
           className="brightness-[0.918] invert"
-        />
+        /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/icona-sobrero.png"
           alt="Logo"
           className="brightness-[0.918] invert"
         />
-        <img
+        {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/ognano.png"
           alt="Logo"
           className="brightness-[0.918] invert"
-        />
+        /> */}
       </div>
     </motion.div>
   );
-};
-
-const ProjectsSection = () => {
-  return (
-    <div className="bg-primary-900 px-10 text-slate-300">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-        <div className="mx-auto max-w-sm rounded-lg border border-gray-700 bg-accent3-900 shadow">
-          <a href="#">
-            <img
-              className="h-64 w-full rounded-t-lg object-cover"
-              src="/binary-code.jpg"
-              alt=""
-            />
-          </a>
-          <div className="p-5">
-            <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-                Titolo del post
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-400">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              sed necessitatibus fuga eveniet illo temporibus quia, nihil rerum
-              tempore voluptatem ex qui minus praesentium nam laudantium aut
-              architecto! Rerum, non?
-            </p>
-            <a
-              href="#"
-              className="inline-flex items-center rounded-lg bg-accent3-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-accent3-700 focus:outline-none focus:ring-4 focus:ring-accent3-800"
-            >
-              Leggi di più
-              <svg
-                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const ContentSection = () => {
-  return (
-    <>
-      <div className="absolute inset-x-0 bottom-0 h-px overflow-hidden">
-        <div className="absolute -left-8 -right-8 bottom-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
-      </div>
-      <div className="bg-primary-900 px-10 text-slate-300">
-        <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 sm:grid-cols-2 sm:px-0 sm:py-0">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            In aggiunta, la collaborazione con enti esterni porta a realizzare
-            progetti innovativi che spesso si traducono in iniziative concrete e
-            utili per la comunità. Per esempio, alcuni progetti hanno incluso la
-            creazione di campagne di sensibilizzazione su temi rilevanti, la
-            realizzazione di eventi online e la promozione di attività
-            culturali. Queste iniziative non solo valorizzano il lavoro del
-            team, ma contribuiscono anche a creare un legame più forte tra la
-            scuola e il territorio. Gli studenti diventano così protagonisti
-            attivi della loro comunità, dimostrando come le competenze digitali
-            possano avere un impatto positivo.
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Infine, le collaborazioni esterne sono anche un modo per stimolare
-            la creatività e l’innovazione all’interno del gruppo. Ogni nuovo
-            progetto porta con sé sfide diverse che richiedono brainstorming e
-            scambio di idee. Questo ambiente stimolante favorisce la crescita
-            personale e professionale di ciascun membro del team,
-            incoraggiandoli a pensare fuori dagli schemi e a esplorare nuove
-            strade. Con un approccio orientato alla sperimentazione e
-            all’apprendimento continuo, SobreWeb si posiziona come un vero
-            laboratorio di innovazione digitale, contribuendo a modellare un
-            futuro più dinamico e interattivo per la scuola.
-          </motion.p>
-        </div>
-      </div>
-    </>
-  );
-};
-
-// Inoltre, il lavoro di SobreWeb va oltre la semplice gestione tecnica. Gli studenti partecipano attivamente alla pianificazione e allo sviluppo di iniziative digitali, contribuendo con le loro idee e competenze. Questa esperienza pratica è fondamentale per la loro formazione, poiché permette di acquisire competenze trasversali che saranno preziose nel loro futuro professionale. L'approccio collaborativo e l'attenzione all'innovazione rendono il team un esempio di come la creatività giovanile possa avere un impatto positivo sulla comunità scolastica e oltre.
-
-// Infine, la dedizione di SobreWeb alla qualità e all'aggiornamento continuo del sito web dimostra un forte impegno verso l'eccellenza. I membri del team sono costantemente alla ricerca di nuove soluzioni e tecnologie per migliorare l'esperienza utente, rendendo il sito sempre più accessibile e funzionale. Con una visione orientata al futuro, SobreWeb continua a scrivere la propria storia di successo, contribuendo a plasmare un ambiente digitale che risponde alle esigenze delle nuove generazioni.
-
-const ImageCarousel = () => {
-  return (
-    <div className="grid grid-flow-col grid-cols-3 grid-rows-2 gap-8">
-      <div>
-        <div className="bg-sky-500"></div>
-      </div>
-      <div className="col-start-3">
-        <div className="bg-sky-500"></div>
-      </div>
-      <div>
-        <div className="bg-sky-500"></div>
-      </div>
-      <div>
-        <div className="bg-sky-500"></div>
-      </div>
-      <div className="col-span-2 col-start-2 row-start-1">
-        <div className="bg-sky-500"></div>
-      </div>
-    </div>
-  );
-};
-
-const CommentsSection = () => {
-  return <div></div>;
 };
 
 const Footer = () => {
