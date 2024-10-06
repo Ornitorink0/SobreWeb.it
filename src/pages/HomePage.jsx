@@ -26,7 +26,7 @@ export default class HomePage extends PureComponent {
             style={{ backgroundImage: "url('/header-bg-image.png')" }}
           >
             <BackgroundCircle color="#43C2F9" position="left" />
-            <div className="relative max-w-3xl pt-20 sm:pt-24 lg:pt-32">
+            <div className="relative max-w-3xl xl:ml-12 pt-20 sm:pt-24 lg:pt-32">
               <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl">
                 Benvenuto nel nostro lato{" "}
                 <span className="text-rose-500">tech</span>{" "}
@@ -45,7 +45,7 @@ export default class HomePage extends PureComponent {
         </div>
         {/* <ContentSection /> */}
         <div className="bg-primary-900">
-          <div className="mx-auto grid min-h-[70vh] max-w-5xl grid-cols-1 items-center justify-center gap-8 px-10 py-8 text-slate-300 lg:grid-cols-2">
+          <div className="mx-auto grid min-h-[600px] max-w-5xl grid-cols-1 items-center justify-center gap-8 px-10 py-8 text-slate-300 lg:grid-cols-2">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -77,7 +77,7 @@ export default class HomePage extends PureComponent {
               </p>
             </motion.p>
           </div>
-          <div className="mx-auto grid max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
+          <div className="min-h-[600px] mx-auto grid max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -244,7 +244,7 @@ export default class HomePage extends PureComponent {
             </motion.p>
           </div>
         </div>
-        <div className="flex min-h-screen flex-col items-center justify-center bg-primary-900">
+        <div className="flex min-h-[600px] flex-col items-center justify-center bg-primary-900">
           <motion.h1
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -314,7 +314,7 @@ const PartnerSection = () => {
       whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 0.5, delay: 0.2 }}
       viewport={{ once: true }}
-      className="z-10 mb-12 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
+      className="z-10 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
     >
       <div className="drag-none grid select-none grid-cols-3 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-5">
         {/* <img
