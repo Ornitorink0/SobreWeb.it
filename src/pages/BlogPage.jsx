@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import NavigationBar from "../components/NavigationBar";
+import MetaTags from "../Meta";
 
 export default class BlogPage extends PureComponent {
   render() {

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 import NavigationBar from "../components/NavigationBar.jsx";
+import MetaTags from "../Meta.jsx";
 
 const Policy = () => {
   return (
