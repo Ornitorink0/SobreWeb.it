@@ -5,6 +5,7 @@ export default class NoPage extends PureComponent {
   render() {
     return (
       <>
+        <MetaTags title="Pagina non trovata" />
         <NavigationBar />
         <div className="flex min-h-screen flex-col items-center justify-center bg-primary-900 p-10 text-center text-3xl font-bold text-white">
           <h1 className="mb-4 text-6xl font-extrabold">Pagina non trovata</h1>
