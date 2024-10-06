@@ -12,6 +12,12 @@ const BackgroundCircle = ({ color, position }) => {
         width: "360px", // Imposta le dimensioni del cerchio (puoi modificarle in base alle necessità)
         height: "360px",
         filter: "blur(950px)",
+        zIndex: 0,
+        // not draggable
+        WebkitUserSelect: "none",
+        MozUserSelect: "none",
+        MsUserSelect: "none",
+        userSelect: "none",
       }}
     />
   );
