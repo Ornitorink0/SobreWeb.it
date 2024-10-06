@@ -27,16 +27,16 @@ export default class HomePage extends PureComponent {
           >
             <BackgroundCircle color="#43C2F9" position="left" />
             <div className="relative max-w-3xl pt-20 sm:pt-24 lg:pt-32">
-              <h1 className="text-slate-900 font-extrabold text-6xl sm:text-7xl lg:text-8xl tracking-tight dark:text-white">
+              <h1 className="font-extrabold text-6xl sm:text-7xl lg:text-8xl tracking-tight text-white">
                 Benvenuto nel nostro lato{" "}
-                <span class="text-rose-500">tech</span>{" "}
+                <span className="text-rose-500">tech</span>{" "}
               </h1>
-              <p className="mt-6 text-2xl text-slate-600 max-w-3xl dark:text-slate-400">
+              <p className="mt-6 text-2xl max-w-3xl text-slate-400">
                 Vieni a scoprire i luoghi{" "}
-                <span class="text-sky-500">nascosti</span> dell'IS Sobrero.
+                <span className="text-sky-500">nascosti</span> dell'IS Sobrero.
               </p>
               <div className="mt-6 sm:mt-10 flex space-x-6 text-sm">
-                <button className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
+                <button className="focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto bg-sky-500 highlight-white/20 hover:bg-sky-400">
                   Inizia a navigare
                 </button>
               </div>
@@ -51,7 +51,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-slate-300 text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight dark:text-white z-10"
+              className="text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white z-10"
             >
               <h1 className="text-7xl font-bold">Chi siamo?</h1>
             </motion.h1>
@@ -60,7 +60,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="mt-6 text-lg text-slate-600 max-w-7xl mx-auto dark:text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10"
+              className="mt-6 text-lg max-w-7xl mx-auto text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10"
             >
               <p className="text-lg text-slate-400 md:text-2xl border-gray-800 border-l-4 pl-4">
                 <span className="font-bold">SobreWeb</span> è un team di
@@ -85,7 +85,7 @@ export default class HomePage extends PureComponent {
               viewport={{ once: true }}
               className="text-center px-8 mb-10 sm:mb-16 md:mb-20 text-slate-300"
             >
-              <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
+              <h2 className="text-4xl tracking-tight font-extrabold sm:text-5xl text-white">
                 “Fiero di noi” sempre e comunque.
               </h2>
               <figure>
@@ -106,7 +106,7 @@ export default class HomePage extends PureComponent {
                     decoding="async"
                   />
                   <div>
-                    <div className="text-slate-900 font-semibold dark:text-white">
+                    <div className="font-semibold text-white">
                       Matteo Gurrieri
                     </div>
                     <div className="mt-0.5 text-sm leading-6">
@@ -123,7 +123,7 @@ export default class HomePage extends PureComponent {
               viewport={{ once: true }}
               className="text-center px-8 my-20 sm:my-16 md:my-20 text-slate-300"
             >
-              <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
+              <h2 className="text-4xl tracking-tight font-extrabold sm:text-5xl text-white">
                 “Esperienza di vita”
               </h2>
               <figure>
@@ -144,7 +144,7 @@ export default class HomePage extends PureComponent {
                     decoding="async"
                   />
                   <div>
-                    <div className="text-slate-900 font-semibold dark:text-white">
+                    <div className="font-semibold text-white">
                       Giacomo Luppino
                     </div>
                     <div className="mt-0.5 text-sm leading-6">
@@ -164,7 +164,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-slate-300 text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight dark:text-white z-10"
+              className="text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white z-10"
             >
               Collaborazioni che Creano{" "}
               <span className="text-lime-500">Opportunità</span>
@@ -174,7 +174,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="mt-6 text-lg text-slate-600 max-w-7xl mx-auto dark:text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10 border-gray-800 border-l-4 pl-4"
+              className="mt-6 text-lg max-w-7xl mx-auto text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10 border-gray-800 border-l-4 pl-4"
             >
               Uno degli aspetti più interessanti di SobreWeb è la sua capacità
               di collaborare con enti e istituzioni esterne. Queste partnership
@@ -250,9 +250,9 @@ export default class HomePage extends PureComponent {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-slate-300 text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight dark:text-white z-10"
+            className="text-left lg:text-center font-extrabold text-3xl sm:text-4xl lg:text-7xl tracking-tight text-white z-10"
           >
-            I nostri <span className="text-emerald-500">Partner</span>
+            Abbiamo collaborato con
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -276,7 +276,7 @@ const PartnerSection = () => {
       whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 1, delay: 0.2 }}
       viewport={{ once: true }}
-      className="max-w-7xl bg-primary-800 opacity-70 mt-10 border border-gray-200 rounded-lg shadow dark:border-gray-700 p-10 z-10 mb-12"
+      className="max-w-7xl bg-primary-800 opacity-70 mt-10 border rounded-lg shadow border-gray-700 p-10 z-10 mb-12"
     >
       <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale bg-primary-800 opacity-70 select-none drag-none items-center">
         <img
@@ -438,22 +438,21 @@ const ProjectsSection = () => {
   return (
     <div className="bg-primary-900 px-10 text-slate-300">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
-        <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-accent3-900 dark:border-gray-700">
+        <div className="max-w-sm mx-auto border rounded-lg shadow bg-accent3-900 border-gray-700">
           <a href="#">
             <img
-              class="rounded-t-lg"
+              className="rounded-t-lg h-64 w-full object-cover"
               src="/binary-code.jpg"
-              className="h-64 w-full object-cover"
               alt=""
             />
           </a>
-          <div class="p-5">
+          <div className="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Titolo del post
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-gray-400">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
               sed necessitatibus fuga eveniet illo temporibus quia, nihil rerum
               tempore voluptatem ex qui minus praesentium nam laudantium aut
@@ -461,11 +460,11 @@ const ProjectsSection = () => {
             </p>
             <a
               href="#"
-              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-accent3-600 dark:hover:bg-accent3-700 dark:focus:ring-accent3-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-accent3-600 hover:bg-accent3-700 focus:ring-accent3-800"
             >
               Leggi di più
               <svg
-                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -473,9 +472,9 @@ const ProjectsSection = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
@@ -490,8 +489,8 @@ const ProjectsSection = () => {
 const ContentSection = () => {
   return (
     <>
-      <div class="absolute inset-x-0 bottom-0 h-px overflow-hidden">
-        <div class="absolute -left-8 -right-8 bottom-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
+      <div className="absolute inset-x-0 bottom-0 h-px overflow-hidden">
+        <div className="absolute -left-8 -right-8 bottom-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
       </div>
       <div className="bg-primary-900 px-10 text-slate-300">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-0 sm:px-0 grid grid-cols-1 sm:grid-cols-2 items-center gap-10 mt-10">
@@ -541,21 +540,21 @@ const ContentSection = () => {
 
 const ImageCarousel = () => {
   return (
-    <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
+    <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
       <div>
-        <div class="bg-sky-500"></div>
+        <div className="bg-sky-500"></div>
       </div>
-      <div class="col-start-3">
-        <div class="bg-sky-500"></div>
-      </div>
-      <div>
-        <div class="bg-sky-500"></div>
+      <div className="col-start-3">
+        <div className="bg-sky-500"></div>
       </div>
       <div>
-        <div class="bg-sky-500"></div>
+        <div className="bg-sky-500"></div>
       </div>
-      <div class="row-start-1 col-start-2 col-span-2">
-        <div class="bg-sky-500"></div>
+      <div>
+        <div className="bg-sky-500"></div>
+      </div>
+      <div className="row-start-1 col-start-2 col-span-2">
+        <div className="bg-sky-500"></div>
       </div>
     </div>
   );
@@ -566,46 +565,55 @@ const CommentsSection = () => {
 };
 
 const Footer = () => {
+  let contactInfo = {
+    email: "mailto:info@sobreweb.it",
+    phone: "0142-454543",
+    address: {
+      name: "Via Candiani d'Olivola, 19 - 15033 Casale Monferrato (AL), Italia",
+      link: "https://maps.app.goo.gl/PhsshtSHNnp2PhLf8"
+    },
+    website: "sobreweb.it",
+  };
   return (
     <footer className="bg-black text-slate-300 px-10 pt-8">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div className="flex flex-col">
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">
             Contatti
           </h2>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             Email:{" "}
             <a
-              href="mailto:info@sobreweb.it"
+              href={contactInfo.email}
               className="text-blue-500 hover:text-blue-700"
             >
-              info@sobreweb.it
+              {contactInfo.email}
             </a>
           </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             Telefono:{" "}
             <a
-              href="tel:+390123456789"
+              href={"tel:" + contactInfo.phone}
               className="text-blue-500 hover:text-blue-700"
             >
-              +39 012 345 67 89
+              {contactInfo.phone}
             </a>
           </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             Indirizzo:{" "}
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Via+Roma,+1,+10060+Montaldo+Torinese+TO"
-              class="text-blue-500 hover:text-blue-700"
+              href={contactInfo.address.link}
+              className="text-blue-500 hover:text-blue-700"
             >
-              Via Roma, 1, 10060 Montaldo Torinese (TO)
+              {contactInfo.address.name}
             </a>
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">
             Social
           </h2>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             <a
               href="https://www.facebook.com/sobreweb"
               className="text-blue-500 hover:text-blue-700"
@@ -616,7 +624,7 @@ const Footer = () => {
               />
             </a>
           </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             <a
               href="https://www.instagram.com/sobreweb_it"
               className="text-blue-500 hover:text-blue-700"
@@ -627,7 +635,7 @@ const Footer = () => {
               />
             </a>
           </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3 font-normal text-gray-400">
             <a
               href="https://twitter.com/sobreweb_it"
               className="text-blue-500 hover:text-blue-700"
