@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import NavigationBar from "../components/NavigationBar";
 
-export default class BlogsPage extends PureComponent {
+export default class BlogPage extends PureComponent {
   render() {
     return (
       <>
