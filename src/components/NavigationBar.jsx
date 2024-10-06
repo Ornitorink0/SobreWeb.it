@@ -68,7 +68,7 @@ export default class NavigationBar extends PureComponent {
 
         {/* Menu per desktop */}
         <div className="hidden md:flex gap-4 text-lg font-semibold tracking-wide">
-          {["Home", "Blogs", "Contact", "About"].map((item, index) => (
+          {["Home", "Blogs", "About"].map((item, index) => (
             <a
               key={index}
               href={`/${item.toLowerCase()}`}
@@ -118,7 +118,7 @@ export default class NavigationBar extends PureComponent {
                 exit={{ y: "-100%" }}
                 transition={{ type: "spring", stiffness: 120, damping: 20 }}
               >
-                {["Home", "Blogs", "Contact", "About"].map((item, index) => (
+                {["Home", "Blogs", "About"].map((item, index) => (
                   <a
                     key={index}
                     href={`/${item.toLowerCase()}`}
