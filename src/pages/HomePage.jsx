@@ -22,21 +22,21 @@ export default class HomePage extends PureComponent {
         <NavigationBar />
         <div>
           <div
-            className="relative min-h-screen bg-primary-900 flex items-center px-8 bg-cover bg-right xl:bg-bottom bg-no-repeat"
+            className="relative flex min-h-screen items-center bg-primary-900 bg-cover bg-right bg-no-repeat px-8 xl:bg-bottom"
             style={{ backgroundImage: "url('/header-bg-image.png')" }}
           >
             <BackgroundCircle color="#43C2F9" position="left" />
             <div className="relative max-w-3xl pt-20 sm:pt-24 lg:pt-32">
-              <h1 className="font-extrabold text-6xl sm:text-7xl lg:text-8xl tracking-tight text-white">
+              <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl">
                 Benvenuto nel nostro lato{" "}
                 <span className="text-rose-500">tech</span>{" "}
               </h1>
-              <p className="mt-6 text-2xl max-w-3xl text-slate-400">
+              <p className="mt-6 max-w-3xl text-2xl text-slate-400">
                 Vieni a scoprire i luoghi{" "}
                 <span className="text-sky-500">nascosti</span> dell'IS Sobrero.
               </p>
-              <div className="mt-6 sm:mt-10 flex space-x-6 text-sm">
-                <button className="focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto bg-sky-500 highlight-white/20 hover:bg-sky-400">
+              <div className="mt-6 flex space-x-6 text-sm sm:mt-10">
+                <button className="highlight-white/20 flex h-12 w-full items-center justify-center rounded-lg bg-sky-500 px-6 font-semibold text-white hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 sm:w-auto">
                   Inizia a navigare
                 </button>
               </div>
@@ -44,14 +44,14 @@ export default class HomePage extends PureComponent {
           </div>
         </div>
         {/* <ContentSection /> */}
-        <div className="bg-primary-900 ">
-          <div className="px-10 text-slate-300 min-h-[70vh] grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-5xl mx-auto gap-8 py-8">
+        <div className="bg-primary-900">
+          <div className="mx-auto grid min-h-[70vh] max-w-5xl grid-cols-1 items-center justify-center gap-8 px-10 py-8 text-slate-300 lg:grid-cols-2">
             <motion.h1
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white z-10"
+              className="z-10 text-left text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-center lg:text-7xl"
             >
               <h1 className="text-7xl font-bold">Chi siamo?</h1>
             </motion.h1>
@@ -60,9 +60,9 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="mt-6 text-lg max-w-7xl mx-auto text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10"
+              className="z-10 mx-auto mt-6 max-w-7xl text-left text-lg tracking-tight text-slate-400 sm:text-xl lg:text-2xl"
             >
-              <p className="text-lg text-slate-400 md:text-2xl border-gray-800 border-l-4 pl-4">
+              <p className="border-l-4 border-gray-800 pl-4 text-lg text-slate-400 md:text-2xl">
                 <span className="font-bold">SobreWeb</span> è un team di
                 studenti dell'<i>Istituto Sobrero</i>, attivo da oltre{" "}
                 <span className="font-bold">15 anni</span> nella progettazione e
@@ -77,20 +77,20 @@ export default class HomePage extends PureComponent {
               </p>
             </motion.p>
           </div>
-          <div className="px-10 text-slate-300 grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-5xl mx-auto">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-center px-8 mb-10 sm:mb-16 md:mb-20 text-slate-300"
+              className="mb-10 px-8 text-center text-slate-300 sm:mb-16 md:mb-20"
             >
-              <h2 className="text-4xl tracking-tight font-extrabold sm:text-5xl text-white">
+              <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
                 “Fiero di noi” sempre e comunque.
               </h2>
               <figure>
                 <blockquote>
-                  <p className="mt-6 max-w-3xl mx-auto text-lg">
+                  <p className="mx-auto mt-6 max-w-3xl text-lg">
                     Sono fiero di lavorare per questo gruppo e mi piace il modo
                     in cui collaboriamo tra noi studenti. Siamo sempre in cerca
                     di idee e riusciamo a realizzarle in modo efficiente. Grazie
@@ -101,7 +101,7 @@ export default class HomePage extends PureComponent {
                   <img
                     src="https://avatars.githubusercontent.com/u/174024113?v=4"
                     alt=""
-                    className="w-14 h-14 rounded-full"
+                    className="h-14 w-14 rounded-full"
                     loading="lazy"
                     decoding="async"
                   />
@@ -121,14 +121,14 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-center px-8 my-20 sm:my-16 md:my-20 text-slate-300"
+              className="my-20 px-8 text-center text-slate-300 sm:my-16 md:my-20"
             >
-              <h2 className="text-4xl tracking-tight font-extrabold sm:text-5xl text-white">
+              <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
                 “Esperienza di vita”
               </h2>
               <figure>
                 <blockquote>
-                  <p className="mt-6 max-w-3xl mx-auto text-lg">
+                  <p className="mx-auto mt-6 max-w-3xl text-lg">
                     Partecipare al gruppo pomeridiano mi concede l'opportunità
                     di imparare cose nuove e di simulare un ambiente reale di
                     lavoro. Ringrazio tutti per questo, a cominciare dal mio
@@ -139,7 +139,7 @@ export default class HomePage extends PureComponent {
                   <img
                     src="https://avatars.githubusercontent.com/u/173935957?v=4"
                     alt=""
-                    className="w-14 h-14 rounded-full"
+                    className="h-14 w-14 rounded-full"
                     loading="lazy"
                     decoding="async"
                   />
@@ -164,7 +164,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-left lg:text-center font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white z-10"
+              className="z-10 text-left text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-center lg:text-7xl"
             >
               Collaborazioni che Creano{" "}
               <span className="text-lime-500">Opportunità</span>
@@ -174,7 +174,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="mt-6 text-lg max-w-7xl mx-auto text-slate-400 text-left sm:text-xl lg:text-2xl tracking-tight z-10 border-gray-800 border-l-4 pl-4"
+              className="z-10 mx-auto mt-6 max-w-7xl border-l-4 border-gray-800 pl-4 text-left text-lg tracking-tight text-slate-400 sm:text-xl lg:text-2xl"
             >
               Uno degli aspetti più interessanti di SobreWeb è la sua capacità
               di collaborare con enti e istituzioni esterne. Queste partnership
@@ -194,14 +194,14 @@ export default class HomePage extends PureComponent {
 
         {/* <ContentSection /> */}
         <div className="bg-primary-900">
-          <div className="relative bg-primary-900 px-10 py-10 gap-8 grid grid-cols-1 xl:grid-cols-3 justify-center items-center text-slate-400 text-left max-w-7xl mx-auto">
+          <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center justify-center gap-8 bg-primary-900 px-10 py-10 text-left text-slate-400 xl:grid-cols-3">
             <BackgroundCircle color="#43C2F9" position="right" />
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-lg text-slate-400 md:text-2xl tracking-tight border-gray-800 border-l-4 pl-4"
+              className="border-l-4 border-gray-800 pl-4 text-lg tracking-tight text-slate-400 md:text-2xl"
             >
               In aggiunta, la collaborazione con enti esterni porta a realizzare
               progetti innovativi che spesso si traducono in iniziative concrete
@@ -219,7 +219,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
-              className="w-full h-full object-cover object-center rounded-lg radius-2xl shadow-2xl max-w-96 mx-auto"
+              className="radius-2xl mx-auto h-full w-full max-w-96 rounded-lg object-cover object-center shadow-2xl"
               src="/two-guys-making-a-project-at-pc.jpg"
               alt="two guys making a project at pc"
               loading="lazy"
@@ -229,7 +229,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-lg text-slate-400 md:text-2xl tracking-tight border-gray-800 border-l-4 pl-4"
+              className="border-l-4 border-gray-800 pl-4 text-lg tracking-tight text-slate-400 md:text-2xl"
             >
               Infine, le collaborazioni esterne sono anche un modo per stimolare
               la creatività e l’innovazione all’interno del gruppo. Ogni nuovo
@@ -244,13 +244,13 @@ export default class HomePage extends PureComponent {
             </motion.p>
           </div>
         </div>
-        <div className="bg-primary-900 min-h-screen flex flex-col items-center justify-center">
+        <div className="flex min-h-screen flex-col items-center justify-center bg-primary-900">
           <motion.h1
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-left lg:text-center font-extrabold text-3xl sm:text-4xl lg:text-7xl tracking-tight text-white z-10"
+            className="z-10 text-left text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-center lg:text-7xl"
           >
             Abbiamo collaborato con
           </motion.h1>
@@ -262,6 +262,44 @@ export default class HomePage extends PureComponent {
           >
             <PartnerSection />
           </motion.div>
+        </div>
+        <div className="bg-primary-900">
+          <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center justify-center gap-8 bg-primary-900 px-10 py-10 text-left text-slate-400 xl:grid-cols-2">
+            <BackgroundCircle color="#43C2F9" position="right" />
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="border-l-4 border-gray-800 pl-4 text-lg tracking-tight text-slate-400 md:text-2xl"
+            >
+              Il lavoro di SobreWeb va oltre la semplice gestione tecnica. Gli
+              studenti partecipano attivamente alla pianificazione e allo
+              sviluppo di iniziative digitali, contribuendo con le loro idee e
+              competenze. Questa esperienza pratica è fondamentale per la loro
+              formazione, poiché permette di acquisire competenze trasversali
+              che saranno preziose nel loro futuro professionale. L'approccio
+              collaborativo e l'attenzione all'innovazione rendono il team un
+              esempio di come la creatività giovanile possa avere un impatto
+              positivo sulla comunità scolastica e oltre.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="border-l-4 border-gray-800 pl-4 text-lg tracking-tight text-slate-400 md:text-2xl"
+            >
+              La dedizione di SobreWeb alla qualità e all'aggiornamento continuo
+              del sito web dimostra un forte impegno verso l'eccellenza. I
+              membri del team sono costantemente alla ricerca di nuove soluzioni
+              e tecnologie per migliorare l'esperienza utente, rendendo il sito
+              sempre più accessibile e funzionale. Con una visione orientata al
+              futuro, SobreWeb continua a scrivere la propria storia di
+              successo, contribuendo a plasmare un ambiente digitale che
+              risponde alle esigenze delle nuove generazioni.
+            </motion.p>
+          </div>
         </div>
         <Footer />
       </>
@@ -276,9 +314,9 @@ const PartnerSection = () => {
       whileInView={{ filter: "blur(0px)" }}
       transition={{ duration: 1, delay: 0.2 }}
       viewport={{ once: true }}
-      className="max-w-7xl bg-primary-800 opacity-70 mt-10 border rounded-lg shadow border-gray-700 p-10 z-10 mb-12"
+      className="z-10 mb-12 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
     >
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-8 grayscale bg-primary-800 opacity-70 select-none drag-none items-center">
+      <div className="drag-none grid select-none grid-cols-3 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-6">
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/a_terr_al.jpg"
           alt="Logo"
@@ -437,11 +475,11 @@ const PartnerSection = () => {
 const ProjectsSection = () => {
   return (
     <div className="bg-primary-900 px-10 text-slate-300">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8">
-        <div className="max-w-sm mx-auto border rounded-lg shadow bg-accent3-900 border-gray-700">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mx-auto max-w-sm rounded-lg border border-gray-700 bg-accent3-900 shadow">
           <a href="#">
             <img
-              className="rounded-t-lg h-64 w-full object-cover"
+              className="h-64 w-full rounded-t-lg object-cover"
               src="/binary-code.jpg"
               alt=""
             />
@@ -460,11 +498,11 @@ const ProjectsSection = () => {
             </p>
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-accent3-600 hover:bg-accent3-700 focus:ring-accent3-800"
+              className="inline-flex items-center rounded-lg bg-accent3-600 px-3 py-2 text-center text-sm font-medium text-white hover:bg-accent3-700 focus:outline-none focus:ring-4 focus:ring-accent3-800"
             >
               Leggi di più
               <svg
-                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -493,7 +531,7 @@ const ContentSection = () => {
         <div className="absolute -left-8 -right-8 bottom-0 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
       </div>
       <div className="bg-primary-900 px-10 text-slate-300">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-0 sm:px-0 grid grid-cols-1 sm:grid-cols-2 items-center gap-10 mt-10">
+        <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 sm:grid-cols-2 sm:px-0 sm:py-0">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -540,7 +578,7 @@ const ContentSection = () => {
 
 const ImageCarousel = () => {
   return (
-    <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
+    <div className="grid grid-flow-col grid-cols-3 grid-rows-2 gap-8">
       <div>
         <div className="bg-sky-500"></div>
       </div>
@@ -553,7 +591,7 @@ const ImageCarousel = () => {
       <div>
         <div className="bg-sky-500"></div>
       </div>
-      <div className="row-start-1 col-start-2 col-span-2">
+      <div className="col-span-2 col-start-2 row-start-1">
         <div className="bg-sky-500"></div>
       </div>
     </div>
@@ -570,13 +608,13 @@ const Footer = () => {
     phone: "0142-454543",
     address: {
       name: "Via Candiani d'Olivola, 19 - 15033 Casale Monferrato (AL), Italia",
-      link: "https://maps.app.goo.gl/PhsshtSHNnp2PhLf8"
+      link: "https://maps.app.goo.gl/PhsshtSHNnp2PhLf8",
     },
     website: "sobreweb.it",
   };
   return (
-    <footer className="bg-black text-slate-300 px-10 pt-8">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 gap-10">
+    <footer className="bg-black px-10 pt-8 text-slate-300">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-16 sm:grid-cols-2 sm:px-0">
         <div className="flex flex-col">
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">
             Contatti
