@@ -312,7 +312,7 @@ const PartnerSection = () => {
     <motion.div
       initial={{ filter: "blur(10px)" }}
       whileInView={{ filter: "blur(0px)" }}
-      transition={{ duration: 1, delay: 0.2 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
       viewport={{ once: true }}
       className="z-10 mb-12 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
     >
