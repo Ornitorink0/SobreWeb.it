@@ -18,6 +18,7 @@ export default class HomePage extends PureComponent {
           organization="IS Sobrero"
           logo="/logo-compat-blue.png"
           siteUrl="https://sobreweb.it"
+          image="/logo-compat-blue.png"
         />
         <NavigationBar />
         <div>
