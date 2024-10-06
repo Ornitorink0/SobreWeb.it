@@ -3,7 +3,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import HomePage from "./pages/HomePage.jsx";
 import BlogsPage from "./pages/BlogsPage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
+import PolicyPage from "./pages/PolicyPage.jsx";
 import NoPage from "./pages/NoPage.jsx";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/Policy" element={<PolicyPage />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
