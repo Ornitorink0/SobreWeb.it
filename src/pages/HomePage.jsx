@@ -27,7 +27,7 @@ export default class HomePage extends PureComponent {
             style={{ backgroundImage: "url('/header-bg-image.png')" }}
           >
             <BackgroundCircle color="#43C2F9" position="left" />
-            <div className="relative max-w-3xl xl:ml-12 pt-20 sm:pt-24 lg:pt-32">
+            <div className="relative max-w-3xl pt-20 sm:pt-24 lg:pt-32 xl:ml-12">
               <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl">
                 Benvenuto nel nostro lato{" "}
                 <span className="text-rose-500">tech</span>{" "}
@@ -60,7 +60,7 @@ export default class HomePage extends PureComponent {
             >
               <p className="border-l-4 border-gray-800 pl-4 text-lg text-slate-400 md:text-2xl">
                 <span className="font-bold">SobreWeb</span> è un team di
-                studenti dell'<i>Istituto Sobrero</i>, attivo da oltre{" "}
+                studenti dell'<i>Istituto Sobrero</i> attivo da oltre{" "}
                 <span className="font-bold">15 anni</span> nella progettazione e
                 gestione del sito web scolastico. Questo gruppo di giovani non
                 si limita a mantenere e aggiornare il portale, ma si impegna
@@ -73,7 +73,7 @@ export default class HomePage extends PureComponent {
               </p>
             </motion.p>
           </div>
-          <div className="min-h-[600px] mx-auto grid max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
+          <div className="mx-auto grid min-h-[600px] max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -179,7 +179,7 @@ export default class HomePage extends PureComponent {
               pratiche che vanno oltre il contesto scolastico. Lavorare a fianco
               di esperti del settore permette ai membri del team di apprendere
               nuove tecniche, scoprire strumenti digitali all'avanguardia e
-              comprendere meglio le dinamiche del lavoro in gruppo. Queste
+              comprendere meglio le dinamiche del lavoro di gruppo. Queste
               esperienze non solo arricchiscono il loro bagaglio formativo, ma
               offrono anche una visione concreta delle sfide e delle opportunità
               del mondo digitale.
@@ -199,16 +199,16 @@ export default class HomePage extends PureComponent {
               viewport={{ once: true }}
               className="border-l-4 border-gray-800 pl-4 text-lg tracking-tight text-slate-400 md:text-2xl"
             >
-              In aggiunta, la collaborazione con enti esterni porta a realizzare
-              progetti innovativi che spesso si traducono in iniziative concrete
-              e utili per la comunità. Per esempio, alcuni progetti hanno
-              incluso la creazione di campagne di sensibilizzazione su temi
-              rilevanti, la realizzazione di eventi online e la promozione di
-              attività culturali. Queste iniziative non solo valorizzano il
-              lavoro del team, ma contribuiscono anche a creare un legame più
-              forte tra la scuola e il territorio. Gli studenti diventano così
-              protagonisti attivi della loro comunità, dimostrando come le
-              competenze digitali possano avere un impatto positivo.
+              La collaborazione con enti esterni porta a realizzare progetti
+              innovativi che spesso si traducono in iniziative concrete e utili
+              per la comunità. Per esempio, alcuni progetti hanno incluso la
+              creazione di campagne di sensibilizzazione, la realizzazione di
+              eventi online e la promozione di attività culturali. Queste
+              iniziative non solo valorizzano il lavoro del team, ma
+              contribuiscono anche a creare un legame più forte tra la scuola e
+              il territorio. Gli studenti diventano così protagonisti attivi
+              della loro comunità, dimostrando come le competenze digitali
+              possano avere un impatto positivo.
             </motion.p>
             <motion.img
               initial={{ opacity: 0 }}
@@ -277,7 +277,7 @@ export default class HomePage extends PureComponent {
               che saranno preziose nel loro futuro professionale. L'approccio
               collaborativo e l'attenzione all'innovazione rendono il team un
               esempio di come la creatività giovanile possa avere un impatto
-              positivo sulla comunità scolastica e oltre.
+              positivo non solo sulla comunità scolastica.
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}

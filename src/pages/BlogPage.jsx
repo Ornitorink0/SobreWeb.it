@@ -19,7 +19,7 @@ export default class BlogPage extends PureComponent {
         />
         <NavigationBar />
         <div className="flex min-h-screen flex-col items-center justify-center bg-primary-900 text-slate-100">
-          <h1 className="text-6xl font-extrabold">
+          <h1 className="text-4xl font-extrabold text-center text-wrap md:text-6xl px-4">
             La pagina è in fase di sviluppo
           </h1>
           <p className="mt-4 text-lg text-slate-400">Ci vediamo presto..! ✨</p>
