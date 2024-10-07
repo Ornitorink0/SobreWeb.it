@@ -7,7 +7,7 @@ export default class BlogPage extends PureComponent {
     return (
       <>
         <MetaTags
-          title="Blog"
+          title="Blog | SobreWeb"
           description="Blog"
           name="Blog"
           locale="it_IT"

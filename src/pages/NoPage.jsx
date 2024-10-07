@@ -7,7 +7,7 @@ export default class NoPage extends PureComponent {
     return (
       <>
         <MetaTags
-          title="Pagina non trovata"
+          title="Pagina non trovata | SobreWeb"
           description="Pagina non trovata"
           name="Pagina non trovata"
           locale="it_IT"

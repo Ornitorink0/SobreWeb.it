@@ -61,8 +61,8 @@ export default class NavigationBar extends PureComponent {
       >
         <a href="/home">
           <img
-            className="drag-none select-none opacity-40"
-            src="/logo-48.svg"
+            className="drag-none select-none opacity-40 w-12"
+            src="/logo-compat-white.svg"
             alt="SobreWeb logo"
           />
         </a>

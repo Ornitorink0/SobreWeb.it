@@ -24,7 +24,7 @@ const Policy = () => {
           <Helmet>
             <title>Informativa sulla Privacy | SobreWeb</title>
           </Helmet>
-          <h1 className="mb-4 mt-12 text-3xl font-semibold">
+          <h1 className="mb-4 mt-24 text-3xl font-semibold">
             Informativa sulla Privacy
           </h1>
           <p className="mb-4">

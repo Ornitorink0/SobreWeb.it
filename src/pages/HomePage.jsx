@@ -47,9 +47,9 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="z-10 text-left text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-center lg:text-7xl"
+              className="z-10 text-center text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
-              <h1 className="text-7xl font-bold">Chi siamo?</h1>
+              Chi siamo?
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -74,82 +74,28 @@ export default class HomePage extends PureComponent {
             </motion.p>
           </div>
           <div className="mx-auto grid min-h-[600px] max-w-5xl grid-cols-1 items-center justify-center px-10 text-slate-300 lg:grid-cols-2">
-            <motion.section
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="mb-10 px-8 text-center text-slate-300 sm:mb-16 md:mb-20"
-            >
-              <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-                “Fiero di noi” sempre e comunque.
-              </h2>
-              <figure>
-                <blockquote>
-                  <p className="mx-auto mt-6 max-w-3xl text-lg">
-                    Sono fiero di lavorare per questo gruppo e mi piace il modo
+            <Testimonial
+              title="Fiero di noi"
+              text="Sono fiero di lavorare per questo gruppo e mi piace il modo
                     in cui collaboriamo tra noi studenti. Siamo sempre in cerca
                     di idee e riusciamo a realizzarle in modo efficiente. Grazie
-                    a questo gruppo posso dare sfogo alla mia intraprendenza!
-                  </p>
-                </blockquote>
-                <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
-                  <img
-                    src="https://avatars.githubusercontent.com/u/174024113?v=4"
-                    alt=""
-                    className="h-14 w-14 rounded-full"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div>
-                    <div className="font-semibold text-white">
-                      Matteo Gurrieri
-                    </div>
-                    <div className="mt-0.5 text-sm leading-6">
-                      Studente della classe 4AI - Informatica
-                    </div>
-                  </div>
-                </figcaption>
-              </figure>
-            </motion.section>
-            <motion.section
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="my-20 px-8 text-center text-slate-300 sm:my-16 md:my-20"
-            >
-              <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-                “Esperienza di vita”
-              </h2>
-              <figure>
-                <blockquote>
-                  <p className="mx-auto mt-6 max-w-3xl text-lg">
-                    Partecipare al gruppo pomeridiano mi concede l'opportunità
+                    a questo gruppo posso dare sfogo alla mia intraprendenza!"
+              image="https://avatars.githubusercontent.com/u/174024113?v=4"
+              name="Matteo Gurrieri"
+              role="Studente di informatica"
+              delay={0.2}
+            />
+            <Testimonial
+              title="Esperienza di vita"
+              text="Partecipare al gruppo pomeridiano mi concede l'opportunità
                     di imparare cose nuove e di simulare un ambiente reale di
                     lavoro. Ringrazio tutti per questo, a cominciare dal mio
-                    professore.
-                  </p>
-                </blockquote>
-                <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
-                  <img
-                    src="https://avatars.githubusercontent.com/u/173935957?v=4"
-                    alt=""
-                    className="h-14 w-14 rounded-full"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div>
-                    <div className="font-semibold text-white">
-                      Giacomo Luppino
-                    </div>
-                    <div className="mt-0.5 text-sm leading-6">
-                      Studente della classe 4AI - Informatica
-                    </div>
-                  </div>
-                </figcaption>
-              </figure>
-            </motion.section>
+                    professore."
+              image="https://avatars.githubusercontent.com/u/173935957?v=4"
+              name="Giacomo Luppino"
+              role="Studente di informatica"
+              delay={0.4}
+            />
           </div>
           <div className="px-10">
             {/* <div
@@ -160,7 +106,7 @@ export default class HomePage extends PureComponent {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="z-10 text-left text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-center lg:text-7xl"
+              className="z-10 text-center text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl"
             >
               Collaborazioni che Creano{" "}
               <span className="text-lime-500">Opportunità</span>
@@ -303,6 +249,40 @@ export default class HomePage extends PureComponent {
   }
 }
 
+const Testimonial = ({ title, text, image, name, role, delay }) => {
+  return (
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, delay: delay }}
+      viewport={{ once: true }}
+      className="my-20 px-8 text-center text-slate-300 sm:my-16 md:my-20"
+    >
+      <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+        “{title}”
+      </h2>
+      <figure>
+        <blockquote className="mx-auto mt-2 max-w-xl">
+          <i className="mt-6 text-lg">{text}</i>
+        </blockquote>
+        <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
+          <img
+            src={image}
+            alt={name}
+            className="h-14 w-14 rounded-full"
+            loading="lazy"
+            decoding="async"
+          />
+          <div>
+            <div className="font-semibold text-white">{name}</div>
+            <div className="mt-0.5 text-sm leading-6">{role}</div>
+          </div>
+        </figcaption>
+      </figure>
+    </motion.section>
+  );
+};
+
 const PartnerSection = () => {
   return (
     <motion.div
@@ -312,156 +292,156 @@ const PartnerSection = () => {
       viewport={{ once: true }}
       className="z-10 mt-10 max-w-7xl rounded-lg border border-gray-700 bg-primary-800 p-10 opacity-70 shadow"
     >
-      <div className="drag-none grid select-none grid-cols-3 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-5">
+      <div className="drag-none grid select-none grid-cols-1 items-center gap-8 bg-primary-800 opacity-70 grayscale md:grid-cols-5">
         {/* <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/a_terr_al.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2016/07/logo_alternanza.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/chiaro.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2016/03/scuola_digitale.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2016/07/logo_serale.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/mail.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/registro.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2020/02/mad-1.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/share.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2016/01/dschola.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/miur.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/istanze.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/invalsi.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2015/09/rete_sicurezza_logo.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/2017/04/logo_albo.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.sobrero.edu.it/wp-content/uploads/loghi/amm_tr.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/02/logo-scuole-insieme-300x289.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="mx-auto brightness-[0.918] invert"
         />
         {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/03/ECOFFICINA_NEW_LOGO_light.jpg"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/03/logo_aula_amianto_asbesto-1-of-1.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="mx-auto brightness-[0.918] invert"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/Afeva.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="mx-auto brightness-[0.918] invert"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/LogoComune.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="mx-auto brightness-[0.918] invert"
         />
         {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/anna-d_alencon.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/casale3.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/cipia.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/don-milani.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/francesco-negri.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/icona-balbo.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         />
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/icona-leardi.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         /> */}
         <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/icona-sobrero.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="mx-auto brightness-[0.918] invert"
         />
         {/* <img
           src="https://www.retescuoleinsieme.it/wp-content/uploads/2024/04/ognano.png"
           alt="Logo"
-          className="brightness-[0.918] invert"
+          className="brightness-[0.918] invert mx-auto"
         /> */}
       </div>
     </motion.div>
