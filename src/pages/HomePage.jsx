@@ -6,6 +6,7 @@ import NavigationBar from "../components/NavigationBar.jsx";
 import MetaTags from "../Meta.jsx";
 
 import Footer from "../components/Footer.jsx";
+import { Link } from "react-router-dom";
 
 export default class HomePage extends PureComponent {
   render() {
@@ -38,6 +39,11 @@ export default class HomePage extends PureComponent {
                 Vieni a scoprire i luoghi{" "}
                 <span className="text-sky-500">nascosti</span> dell'IS Sobrero.
               </p>
+              <Link to="/blog" className="mt-6 flex space-x-6 text-sm sm:mt-10">
+                <button className="highlight-white/20 flex h-12 w-full items-center justify-center rounded-lg bg-sky-500 px-6 font-semibold text-white hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 sm:w-auto">
+                  Visita il blog
+                </button>
+              </Link>
             </div>
           </div>
         </div>
